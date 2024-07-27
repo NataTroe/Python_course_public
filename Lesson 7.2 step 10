@@ -1,0 +1,7 @@
+m, n = int(input()), int(input())
+for i in range(m, n + 1):
+    sol_1 = i % 17 == 0
+    sol_2 = i % 10 == 9
+    sol_3 = i % 3 == 0 and i % 5 == 0
+    if sol_1 or sol_2 or sol_3:
+        print(i)
